@@ -3,3 +3,5 @@
 ## CIA Triad
 
 ## OWASP TOP 10
+
+## Principle of least privilege
