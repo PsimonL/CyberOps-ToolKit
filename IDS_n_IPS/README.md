@@ -13,11 +13,16 @@ There are several types of IDS/IPS systems, but the two most popular are:
 - Host-based Detection / Prevention System
 
 
+### NIDS (Network Intrusion Detection System) and NIPS (Network Intrusion Prevention System)
 
-## NIDS (Network Intrusion Detection System) and NIPS (Network Intrusion Prevention System)
 
 
-## HIDS (Host-based Intrusion Detection System) and HIPS (Host-based Intrusion Prevention System)
+### HIDS (Host-based Intrusion Detection System) and HIPS (Host-based Intrusion Prevention System)
+
+
+## IDS detection methods
+
+## IPS prevention methods
 
 
 ## Summary
