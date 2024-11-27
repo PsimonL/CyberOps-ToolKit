@@ -1,11 +1,19 @@
 # General Cybersecurity Concepts
 
 ## CIA Triad
-- Confidentiality
-- Integrity
-- Availability
+- Confidentiality - preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information.
+- Integrity - guarding against improper information modification or destruction and ensuring information non-repudiation and authenticity.
+- Availability - ensuring timely and reliable access to and use of information.
 
-## Principle of least privilege
+https://www.nccoe.nist.gov/publication/1800-26/VolA/index.html
+
+## Principle of least privilege (PLP)
+Concept which states that user or entity should only have enough priviliges to access specific data, resources
+and apps to execute given task. 
+It significantly reduces attack surface and risk of malware spread. 
+
+https://www.paloaltonetworks.com/cyberpedia/what-is-the-principle-of-least-privilege
+https://en.wikipedia.org/wiki/Principle_of_least_privilege
 
 ## Binary classification in Cybersecurity
 Given a classification of a specific data set, there are four basic combinations of actual data category and assigned category: true positives TP (correct positive assignments), true negatives TN (correct negative assignments), false positives FP (incorrect positive assignments), and false negatives FN (incorrect negative assignments).
@@ -25,7 +33,7 @@ Example based on Threat identification, let's for IDS/IPS.
 | **True Negative (TN)**     | No | No |
 
 
-It can be analogically applied to for instance vulnerability scanning.
+It can be analogically applied for instance to vulnerability scanning.
 
 ## OWASP TOP 10
 For year 2021:
@@ -52,6 +60,7 @@ For year 2017:
 9. A09:2017 - Using Components with Known Vulnerabilities
 10. A10:2017 - Insufficient Logging & Monitoring
 
+https://owasp.org/www-project-top-ten/
 
 ## Most common attacks
 - Phising
@@ -61,3 +70,14 @@ For year 2017:
 - OWASP TOP 10 vulnerabilities
 - Malware (Viruses, Worms, Trojans, Ransomware, Spyware, Adware, RootKit, Botnets, Keyloggers)
 - RootKit
+
+## Types of Penetration Testing methodologies:
+- Network Pen Testing 
+- Web Application Pen Testing
+- Physical Pen Testing
+- Wireless Pen Testing
+- Mobile Pen Testing
+- Social Engineering Pen Testing
+
+![HTB_Pen_Testings](/xyz_resources_n_images/HackTheBoxPentests.jpg)
+https://www.hackthebox.com/blog/an-aspiring-hackers-web-application-penetration-testing-guide-for-2024
