@@ -1,9 +1,10 @@
 # General Cybersecurity Concepts
 
 ## CIA Triad
-- Confidentiality - preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information.
-- Integrity - guarding against improper information modification or destruction and ensuring information non-repudiation and authenticity.
-- Availability - ensuring timely and reliable access to and use of information.
+- Confidentiality - preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information. It can be put into practice through:
+encryption/decryption, access control (RBAC and leat privileg principle), authentication like MFA (Multi-Factor Authentication), data masking (tokenization) and network security.
+- Integrity - guarding against improper information modification or destruction and ensuring information non-repudiation and authenticity. It can be implemented as: Checksums and Hashing, Digital Signature and also Access control. 
+- Availability - ensuring timely and reliable access to and use of information. It guaranties that resources are available to authorized users whenever needed, without delays or interruptions. It can be implemented through: Redundancy during Failovers (backups), QoS networks, Load Balancing, DDoS Mitigation and backups.
 
 https://www.nccoe.nist.gov/publication/1800-26/VolA/index.html
 
@@ -62,6 +63,56 @@ For year 2017:
 
 https://owasp.org/www-project-top-ten/
 
+Selected attacks description:  
+- SQL Injection
+Atakujący identyfikuje formularz, URL lub inny punkt wejścia, który wprowadza dane użytkownika do zapytania SQL w sposób, który nie jest odpowiednio walidowany lub oczyszczany.
+```
+SELECT * FROM users WHERE username = 'admin' AND password = 'hasło';
+```
+```
+SELECT * FROM users WHERE username = 'admin' AND password = '' OR '1'='1';
+```
+Zabezpieczenia przed SQLi:  
+Używanie przygotowanych zapytań (Prepared Statements): Zamiast dynamicznego tworzenia zapytań SQL.  
+
+Walidacja i oczyszczanie danych wejściowych:   
+Upewnienie się, że dane wejściowe użytkownika są bezpieczne.
+
+Używanie ORM (Object-Relational Mapping): 
+Pomaga unikać ręcznego tworzenia zapytań SQL.
+
+Minimalne uprawnienia:  
+Konta baz danych powinny mieć ograniczone uprawnienia.
+
+- DDoS
+Przygotowanie botnetu:
+
+Atakujący infekuje wiele komputerów lub urządzeń (zwykle przez złośliwe oprogramowanie), tworząc botnet. Te urządzenia stają się "zombie" i mogą być kontrolowane przez atakującego.
+Wysyłanie dużej ilości ruchu:
+
+Atakujący wykorzystuje botnet do wysyłania ogromnej ilości żądań do celu (serwera, aplikacji, sieci). W wyniku tego celu nie jest w stanie obsłużyć tak dużej liczby żądań.
+Przeciążenie zasobów:
+
+Celem ataku jest przeciążenie zasobów (np. serwera, łącza internetowego lub aplikacji), aby uniemożliwić dostęp do usługi.
+
+Zabezpieczenia przed DDoS:
+Firewall i WAF (Web Application Firewall): Używanie zapór ogniowych i zapór aplikacji webowych w celu filtrowania niepożądanych żądań.
+Load balancing i rozproszenie zasobów: Rozpraszanie ruchu przez wiele serwerów, aby zwiększyć odporność na atak.
+
+- XSS 
+Attacker wprowadza kod (skrypt JS) kótry jest zaciągany przez serwer
+I serwer serwuje strone użytkownikom z zainfekowanym kodem. Co moze prowadzić do:
+Kradzież danych użytkowników, w tym haseł czy danych sesyjnych.
+Zmiana zawartości strony internetowej.
+Zainfekowanie komputerów użytkowników złośliwym oprogramowaniem (np. poprzez redirekcję do złośliwego linku).
+
+Obrona:
+Walidacja i oczyszczanie danych wejściowych: Wszystkie dane użytkownika powinny być walidowane i oczyszczane przed wyświetleniem na stronie.
+
+Używanie nagłówków CSP (Content Security Policy): Umożliwia zdefiniowanie, skąd mogą pochodzić skrypty na stronie.
+
+Escape'owanie danych w HTML, JavaScript: Zapewnienie, że dane użytkownika są traktowane jako dane, a nie jako kod do wykonania.
+
 ## Most common attacks
 - Phising
 - Man-in-the-Middle
@@ -81,3 +132,10 @@ https://owasp.org/www-project-top-ten/
 
 ![HTB_Pen_Testings](/xyz_resources_n_images/HackTheBoxPentests.jpg)
 https://www.hackthebox.com/blog/an-aspiring-hackers-web-application-penetration-testing-guide-for-2024
+
+## Glosary
+- a exploit
+- a vulnerability
+- to mitigate security risk
+- an authentication
+- to authorize
