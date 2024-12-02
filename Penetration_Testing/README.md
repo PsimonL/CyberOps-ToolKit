@@ -21,7 +21,7 @@ An authorized simulated cyberattack on a computer system, performed to evaluate 
 
 - Performed to identify weaknesses, including the potential for unauthorized parties to gain access to the system's features and data.
 - A penetration test can help identify a system's vulnerabilities to attack and estimate how vulnerable it is. 
-- Security issues that the penetration test uncovers should be reported to the system owner.
+> Security issues that the penetration test uncovers should be reported to the system owner!!!
 
 ## Types of Penetration Testing
 
