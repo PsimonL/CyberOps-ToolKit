@@ -57,7 +57,6 @@ There can be differentiate multiple types based on this criterium, but mains are
  - Internal - an attack from within the organization.
  - Social Engineering - Focuses on human as main factor of security threats.Vulnerabilities, such as phishing, tailgating, or vishing (voice phishing).
 
-
 ## Related stuff:
 - DAST folder - Contains stuff for Dynamic Application Security Testing (Black Box Web Apps Testing), covering this topics and tools like Burp Suite and Owasp Zap.
 
