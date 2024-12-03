@@ -139,3 +139,5 @@ https://www.hackthebox.com/blog/an-aspiring-hackers-web-application-penetration-
 - to mitigate security risk
 - an authentication
 - to authorize
+- a payload
+- an enumeration

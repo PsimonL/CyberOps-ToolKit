@@ -1,4 +1,4 @@
-# SAST (Static Application Security Testing) White Box Testing
+# SAST (Static Application Security Testing) White Box Testing - White Box
 
 
 ## What is SAST?

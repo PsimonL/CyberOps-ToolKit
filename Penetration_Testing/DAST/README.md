@@ -1,4 +1,4 @@
-# DAST (Dynamic Application Security Testing) Black Box Testing
+# DAST (Dynamic Application Security Testing) - Black Box We App Testing
 
 
 ## What is DAST?
@@ -19,6 +19,8 @@ Most of the most popular tools can work in **manual** as well as **automated mod
 ## Tools which can be used in DAST methodology
 1. Burp Suite
 2. OWASP ZAP
+3. Nmap 
+4. Netcat 
 
 ## Other related methodologies
 There is also SAST (Static Application Security Testint) and IAST (Interactive Application Security Testing) which is combination of DAST and SAST.
