@@ -21,3 +21,7 @@ https://portswigger.net/burp/documentation/desktop/getting-started/intercepting-
 
 https://portswigger.net/web-security
 
+
+
+
+https://www.youtube.com/watch?v=G3hpAeoZ4ek&ab_channel=JohnHammond

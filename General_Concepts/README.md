@@ -8,6 +8,15 @@ encryption/decryption, access control (RBAC and leat privileg principle), authen
 
 https://www.nccoe.nist.gov/publication/1800-26/VolA/index.html
 
+## STRIDE 
+A model for identifying computer security threats developed by Microsoft:
+- Spoofing (e.g. IP, DNS, ARP (MAC))
+- Tampering
+- Repudiation
+- Information disclosure (privacy breach or data leak)
+- Denial of service
+- Elevation of privilege
+
 ## Principle of least privilege (PLP)
 Concept which states that user or entity should only have enough priviliges to access specific data, resources
 and apps to execute given task. 
@@ -121,6 +130,9 @@ Escape'owanie danych w HTML, JavaScript: Zapewnienie, że dane użytkownika są 
 - OWASP TOP 10 vulnerabilities
 - Malware (Viruses, Worms, Trojans, Ransomware, Spyware, Adware, RootKit, Botnets, Keyloggers)
 - RootKit
+
+## DNS Security TODO
+https://www.cloudflare.com/pl-pl/learning/email-security/dmarc-dkim-spf/
 
 ## Types of Penetration Testing methodologies:
 - Network Pen Testing 
